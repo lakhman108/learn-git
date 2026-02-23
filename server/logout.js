@@ -8,9 +8,13 @@ class UserAuth {
 
     //logout using your userId
     //changed index to id
+    //added check for verified id
     logout(userId) {
-         const id = this.users.findIndex(u => u.id === userId);
-        this.users[id] = null;
+         const i = this.users.findIndex(u => u.id === userId);
+         if(i === null || i === undefined) {
+            return;
+         }
+        this.users[i] = null;
         return true;
     }
 
