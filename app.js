@@ -21,6 +21,8 @@ class UserAuth {
         return user;
     }
 
+
+    //only for commit
     // Login user using username and plain password
     loginUser(username, password) {
         const user = this.users.find(u => u.username === username);
