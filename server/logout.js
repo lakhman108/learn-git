@@ -7,9 +7,10 @@ class UserAuth {
     }
 
     //logout using your userId
+    //changed index to id
     logout(userId) {
-         const index = this.users.findIndex(u => u.id === userId);
-        this.users[index] = null;
+         const id = this.users.findIndex(u => u.id === userId);
+        this.users[id] = null;
         return true;
     }
 
