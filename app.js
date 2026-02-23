@@ -21,7 +21,7 @@ class UserAuth {
         return user;
     }
 
-    // Login user
+    // Login user using username and plain password
     loginUser(username, password) {
         const user = this.users.find(u => u.username === username);
         if (user && user.password === password) {
