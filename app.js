@@ -6,7 +6,8 @@ class UserAuth {
         this.currentUser = null;
     }
 
-    // Register a new user
+
+    // Register a new user with username email and password
     registerUser(username, email, password) {
         const user = {
             id: this.users.length + 1,
