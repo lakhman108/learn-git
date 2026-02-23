@@ -46,7 +46,7 @@ class UserAuth {
         return false;
     }
 
-    // Delete user account
+    // Delete user account using yuour id
     deleteUser(userId) {
         const index = this.users.findIndex(u => u.id === userId);
         if (index !== -1) {
