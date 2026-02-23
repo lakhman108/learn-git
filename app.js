@@ -31,7 +31,7 @@ class UserAuth {
         return false;
     }
 
-    // Get user profile
+    // Get user profile using your userId
     getUserProfile(userId) {
         return this.users.find(u => u.id === userId);
     }
